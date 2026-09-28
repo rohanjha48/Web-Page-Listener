@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Page Listener",
+  "version": "1.0.0",
+  "description": "Listen to any web page or selected text, translated into the language you understand best.",
+  "permissions": ["activeTab", "scripting", "tts", "storage"],
+  "host_permissions": ["https://translate.googleapis.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Listen to this page" }
+}
